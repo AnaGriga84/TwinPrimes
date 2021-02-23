@@ -22,6 +22,8 @@
 
 /*! \fn bool checkPrime(int number)
 	\brief The first method is a boolean method which checks if the given number is prime. The corner cases are checked and the for loop passes over the middle five numbers.
+           The loop goes till square root of the number. The method generates all prime numbers less than or equal with the given number and checks whether all the generated prime numbers are divisors of that given number. 
+           This is because prime factors of a number are just prime numbers.
 */
 
 bool checkPrime(int number)
@@ -30,8 +32,9 @@ bool checkPrime(int number)
     if(num <= 1) return false;
     if(num <= 3) return true;
 
+    //checked to skip the middle five numbers in the loop
     if(num % 2 == 0 || num %3 ==0) return false;
-    //skiping the middle five numbers
+
     for(int i=5; i*i<=num; i=i+6)
     {
         if(num%i == 0 || num%(i+2) == 0) 
