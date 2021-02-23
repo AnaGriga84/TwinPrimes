@@ -1,0 +1,19 @@
+  Concurrency Project
+  Prime Numbers/ Twin Prime Numbers
+  Author: Ana Griga
+  Student No: C0023144
+  Tutor: Joseph Kehoe
+
+ Task for Concurrency Project:
+
+A sequential code means that it is accessed by only one thread. This implies that a single thread can only run the code in a specific order.
+Concurrency means multiple tasks running at the same time but not essentially at the same time.
+Parallelism is a specific type of concurrency where tasks are actually executed at the same time. 
+
+The goal of this project is to study and get an understanding of parallel and concurrent computing programming. 
+The importance of these methodologies is that it offers efficient code execution and enables programs to be executed in a shorter time.
+The task is to implement a parallel program that counts the number of primes less than a given number and finds a list of all twin primes less than the given number.
+The approach took was to write the program for this task and run it in parallel using OpenMP directives and compare the execution time and the speedup for efficiency and scalability.
+ 
+
+ 
